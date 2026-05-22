@@ -1,6 +1,7 @@
 {
-  "rewrites": [
-    { "source": "/admin", "destination": "/admin.html" },
-    { "source": "/", "destination": "/index.html" }
+  "cleanUrls": true,
+  "routes": [
+    { "src": "/admin", "dest": "/admin.html" },
+    { "src": "/", "dest": "/index.html" }
   ]
 }
