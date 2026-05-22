@@ -1,6 +1,10 @@
 {
-  "rewrites": [
-    { "source": "/admin", "destination": "/admin.html" },
-    { "source": "/(.*)", "destination": "/index.html" }
+  "version": 2,
+  "builds": [
+    { "src": "*.html", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/admin", "dest": "/admin.html" },
+    { "src": "/", "dest": "/index.html" }
   ]
 }
